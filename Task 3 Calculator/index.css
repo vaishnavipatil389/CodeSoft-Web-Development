@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body,html{
+    height: 90%;
+    width: 99.69%;
+    /* font-family: Bruno Ace SC; */
+    background-image: url("rainbow-color-gradation-blur-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px ;
+    cursor:pointer ;
+    width: 60px;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    margin: 4% 0%;
+    font-size: 121%;
+}
+
+:hover.button{
+    background-color: rgb(176, 213, 213);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+
+}
+
+.item-centre{
+    align-items: center;
+}
+
+.row{
+    margin: 8px;
+}
+
+
+
+
+.header{
+    text-align: center;
+    font-size: 298%;
+    margin: 2% 0;
+    color: white;
+    /* font-family: Bruno Ace SC; */
+
+}
+
+.input{
+    width: 78%;
+    height: 20px;
+    margin: 0;
+    padding: 10px 59px 10px 5px;
+    margin: 25px 0px 15px 0px ;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+
+
+.mx-auto{
+    margin: 3% 22% 0% 38%;
+    padding: 0 0 0px 0 ;
+}
+
+.border{
+    background-color: #dce7edde;
+    /* border: 2px solid black; */
+    width: 25%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 41px 17px #888888;
+}
+
+

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1e242a;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#box1{
+    width: 530px;
+    height: 625px;
+    background: url(./images/2.png);
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+    animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+#box1::after{
+    content: '';
+    position: absolute;
+    width: 530px;
+    height: 625px;
+    background-image: url(./images/1.png);
+    left: 0px;
+    z-index: -1;
+}
+
+@keyframes anim{
+    from{
+        bottom: -100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+
+@keyframes anim2{
+    from{
+        left: 30%;
+        width: 530px;
+    }
+    to{
+        width: 0px;
+        left: 50%;
+    }
+}
+
+#box2{
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 8em;
+    font-weight: 500;
+    line-height: 130px;
+    position: absolute;
+    top: 190px;
+    left: 100px;
+    overflow: hidden;
+    text-shadow: 6px 6px 5px rgb(240, 12, 168) 
+}
+
+#text h1{
+  position: relative;
+  left: -100%;
+  animation: anim3 2s forwards 3s;
+    
+}
+
+@keyframes anim3{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+#box3{
+    overflow: hidden;
+}
+
+#container{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    animation: anim4 2s forwards 2.5s;
+}
+
+#logo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    text-shadow: 3px 3px 5px rgb(240, 12, 168) 
+
+}
+
+#logo h1{
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 45px;
+    
+}
+
+#logo h1:hover{
+    scale: 110%;
+}
+
+#menu{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffff;
+    letter-spacing: 2px;
+    margin-right: 80px;
+    margin-top: 20px;
+    float: right;
+    text-transform: uppercase;
+    background-color: #303942;
+    padding: 45px;
+  }
+  
+  #menu ul{
+    list-style: none;
+  }
+  
+  #menu ul li{
+    display: inline-block;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #menu ul li:hover{
+    scale: 120%;
+    text-shadow: 2px 2px 1px rgb(240, 12, 168)
+}
+
+@keyframes anim4{
+    from{
+        top:  -100%;
+    }
+    to{
+        top:  0%;
+    }
+
+}
+
+
+
+  /*=============== SUBSCRIBE ===============*/
+
+ .subscribe__bg {
+ 
+    background-color: #303942;
+    padding: 2.5rem 0;
+    margin-top: 800px;
+  }
+  .section__title {
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+  }
+  .subscribe__title {
+    color: #FFFFFF(244, 103, 223);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(240, 12, 168) 
+  }
+  .subscribe__title:hover {
+    font-size: 50px;
+    cursor: grab;
+    transition: 1s;
+  }
+  
+  .subscribe__description {
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px rgb(111, 67, 97) 
+  }
+  
+  .subscribe__form {
+    width: 500px;
+    height: 50px;
+    margin-left: 500px;
+    background-color: rgb(149, 163, 163);
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .subscribe__input {
+    width: 80%;
+    padding-right: .5rem;
+    background-color:aliceblue;
+    font-size: 20px; 
+  }
+
+  button[type="button"] {
+    background-color: #de038e;
+    color: white;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="button"]:hover {
+    background-color: #840440;
+    cursor:pointer;
+    
+}
+  
+  /*=============== SPONSORS ===============*/
+
+  .sponsor {
+    background-color: #1e242a;
+    padding: 4rem 0;
+}
+
+.sponsor__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sponsor__content {
+    flex: 1 1 150px;
+    display: flex;
+    justify-content:space-around;
+    align-items:end;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.sponsor__content:hover {
+    transform: scale(1.1);
+}
+
+.sponsor__img {
+    width: 200px;
+    filter: invert(0.7);
+    transition: filter 0.3s;
+}
+
+.sponsor__img:hover {
+    filter: invert(0.9);
+}
+ /*=============== FOOTER ===============*/
+ 
+  .footer {
+    background-color: #303942;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: grid;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.footer__title, .footer__subtitle {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fc03a4;
+    text-shadow: 1px 1px 1px rgb(12, 0, 9) ;
+    
+}
+
+.footer__data>h3:hover {
+    color: #191f25;
+    text-shadow: 2px 2px 1px rgb(12, 0, 9) ;
+    transition:1.5s;
+    cursor:pointer;
+} 
+
+.footer__description {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer__subtitle {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__rights {
+   text-align: center;
+   margin-top: 20px;
+   
+}
+
